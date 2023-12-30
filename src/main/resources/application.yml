@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ssm_db
+    username: root
+    password: abc123
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+#druid整合的专用配置方式 但是当前使用下列会报错，还不知其原因
+#spring:
+#  datasource:
+#    druid:
+#       driver-class-name: com.mysql.cj.jdbc.Driver
+#       url: jdbc:mysql://localhost:3306/ssm_db
+#       username: root
+#       password: abc123
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
