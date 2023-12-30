@@ -8,4 +8,5 @@ public class Book {
     private String bookName;
     private Integer price;
     private Integer stock;
+    private String test;
 }
